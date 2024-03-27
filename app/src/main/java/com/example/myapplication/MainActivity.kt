@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -134,7 +135,10 @@ fun Portfolio() {
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            OutlinedButton(onClick = { isOpen.value = !isOpen.value }) {
+            OutlinedButton(onClick = { isOpen.value = !isOpen.value },
+                border = BorderStroke(1.dp, Color.Red),
+                colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.Red)
+            )  {
                 Text(text = "My Project", color = Color.Black)
             }
 
