@@ -90,7 +90,7 @@ fun Portfolio() {
         ) {
 
             Image(
-                painter = painterResource(id = R.drawable.profile), contentDescription = null,
+                painter = painterResource(id = R.drawable.ic_person_accounts), contentDescription = null,
                 modifier = Modifier.size(60.dp)
             )
 
@@ -114,7 +114,7 @@ fun Portfolio() {
                     modifier = Modifier.size(18.dp)
                 )
                 Text(
-                    text = "instagram", style = MaterialTheme.typography.headlineMedium,
+                    text = "mr_suthrr", style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(horizontal = 8.dp)
                 )
             }
@@ -127,7 +127,7 @@ fun Portfolio() {
                     modifier = Modifier.size(18.dp)
                 )
                 Text(
-                    text = "Github", style = MaterialTheme.typography.titleMedium,
+                    text = "mrsuthrr", style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(horizontal = 8.dp)
                 )
             }
